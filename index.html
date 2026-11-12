@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Shipra Sharma - Portfolio. Static site: open index.html or host on GitHub Pages. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shipra Sharma | IT Enthusiast</title>
+<meta name="description" content="Portfolio of Shipra Sharma, IT enthusiast from Kanpur with Python, MySQL and web development skills.">
+<meta name="theme-color" content="#0f766e">
+<meta property="og:title" content="Shipra Sharma | IT Enthusiast">
+<meta property="og:description" content="Python, MySQL and web development portfolio.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#home" class="logo">Shipra Sharma</a>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a>
+    <a href="#education" data-sec="education">Education</a>
+    <a href="#skills" data-sec="skills">Skills</a>
+    <a href="#projects" data-sec="projects">Projects</a>
+    <a href="#internship" data-sec="internship">Training</a>
+    <a href="#certifications" data-sec="certifications">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" aria-label="Toggle light and dark theme"><i class="bi bi-moon-stars"></i></button>
+  <button id="burger" aria-label="Open menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hello">Hello, I am</p>
+    <h1>Shipra Sharma</h1>
+    <h2>IT Enthusiast</h2>
+    <p class="lead">Diploma graduate in Computer Science, learning and building with Python, MySQL and the web. Based in Kanpur, Uttar Pradesh.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">View Projects</a>
+      <a class="btn" href="#contact">Contact Me</a>
+      <a class="btn" href="assets/documents/resume.pdf" download><i class="bi bi-download"></i> Download Resume</a>
+    </div>
+  </div>
+  <div class="photo"><img src="assets/images/profile.jpg" alt="Portrait of Shipra Sharma" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'SS'}))"></div>
+</section>
+
+<section id="about" class="sec reveal">
+  <h2 class="title">About Me</h2>
+  <p class="about">I am an IT enthusiast from Kanpur. I completed a Diploma in Computer Science and Engineering in 2026 and I am now a CITS trainee in the CSA trade at NSTI Kanpur. During my Python development internship at Digicoders Technologies, I worked on core Python, MySQL and debugging. I enjoy Python, databases and building web applications.</p>
+</section>
+
+<section id="education" class="sec reveal"><h2 class="title">Education</h2><div id="education-list" class="timeline"></div></section>
+<section id="skills" class="sec reveal"><h2 class="title">Skills</h2><div id="skills-list"></div></section>
+<section id="projects" class="sec reveal"><h2 class="title">Projects</h2><div id="projects-list" class="grid"></div></section>
+<section id="internship" class="sec reveal"><h2 class="title">Internship / Training</h2><div id="internship-list"></div></section>
+<section id="certifications" class="sec reveal"><h2 class="title">Certifications</h2><div id="certs-list" class="grid"></div></section>
+
+<section id="contact" class="sec reveal">
+  <h2 class="title">Contact</h2>
+  <p class="about">Open to opportunities and learning. Reach me here:</p>
+  <div class="contacts">
+    <!-- EDIT HERE: contact details (also update them in js/script.js DATA.person if you change them) -->
+    <a href="mailto:shiprasharma2904@gmail.com"><i class="bi bi-envelope"></i> shiprasharma2904@gmail.com</a>
+    <a href="tel:+918960240220"><i class="bi bi-telephone"></i> 8960240220</a>
+    <a href="https://www.linkedin.com/in/shipra-sharma-5835a1373/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/shiprasharma2904" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Shipra Sharma</p>
+  <a href="#home" class="btn">Back to top</a>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
